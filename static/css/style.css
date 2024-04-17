@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Doodle+Shadow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}:root {
+    --bg-color: #4c7e87;
+    --primary-color: #830c0caa;
+    --secundary-color:#300660e8;
+    --font-primary: "Nunito", sans-serif;
+    --font-secundary:"Rubik Doodle Shadow", system-ui;
+}
+body {
+    background-color: grey;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    color: white;
+    font-size: 4vw;
+}
+    
+h2{
+    color: white;
+    font-size: 3vw;
+
+}
+header {
+    background-color: #4c7e87;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+a {
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: purple;
+}
+#banner{
+    background-image: url(../img/banner-bg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    /* width: 300px;*/
+     height: 500px;
+     max-width: 900px;
+     padding: 160px 10px;
+ }
+ #search {
+    background-color: var(--secundary-color);
+}
+#popular, #top-rated, #search {
+    text-align: center;
+}
+nav {
+    display: flex;
+    /*Eje principal*/
+    justify-content: space-between;
+    /*eje secundario*/
+    align-items: center;
+    padding: 0px 50px;
+    height: 60px;
+}
+.nav-links {
+    display: flex;
+    list-style: center ;
+    gap: 30px ;
+    list-style-type: none;
+    
+}
+/*conficto*/
+
+
+
+
+/*.item1 {
+    width: 30px;
+    height: 30px;
+    background-color: chartreuse;
+}
+.item2 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(94, 100, 88);
+}*/
+.movies-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    /*flex-reverse: row-reverse;*/
+    /*height: 1200px;*/
+    /*Eje secundario - eje Y*/
+    /*align-items: space-around ;*/
+
+}
+#movie1 , #movie2, #movie3, #movie4, #movie5, #movie6 {
+    flex-grow: 1;
+}
+#movie1 {
+    order:1;
+    background-color: rgb(205, 26, 26);
+    flex-grow:1;
+    flex-basis: 33%;
+}
+#movie2 {
+    order:3;
+    flex-grow: 2;
+    background-color: #185414;
+    flex-basis: 33%;
+}
+#movie3 {
+    order: 5;
+    flex-basis: 33%;
+}
+#movie4 {
+    order: 4;
+    flex-basis: 33%;
+}
+#movie5 {
+    order: 2;
+    flex-basis: 33%;
+}
+#movie6 {
+    order: 6;
+    flex-basis: 33%;
+}
+
+
+

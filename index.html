@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cac-Movies</title>
+    <link rel="cac-movies icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/2e9a8a2266.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- CAMBIO CLASE 9 - MODIFICACIÓN-->
+            <div id="logo">
+                <a href="./">
+                    <i class="fa-solid fa-film fa-beat-fade"><span class="logo-text">
+                        CAC - MOVIES
+                    </span></i>
+                    
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>Tendencias</li>
+                <li>
+                    <a href="./register.html">Registrarse</a>
+                </li>
+                <li>Iniciar Sesión</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="container">
+                <h1>Peliculas y series ilimitadas y muchas mas</h1>
+                <h2>Disfruta donde quieras. Cancela cuando quieras</h2>
+                <a href="register.html" class="btn-cac">Registrate</a>
+            </div>
+            
+        </section> 
+
+        <section id="search">
+            <h2>¿Qué estas buscando?</h2>
+            <input type="text" class="input-search" placeholder="Buscar...">
+            <!-- CAMBIO CLASE 09 - LO COMENTAMOS-->
+            <!-- <div class="contenedor">
+                <div class="item1">
+                    <p>1</p>
+                </div>
+                <div class="item2">
+                    <p>2</p>
+                </div>
+            </div> -->
+        </section>
+
+        <section id="popular">
+            <h2>Las tendencia de hoy</h2>
+            <!-- SE LE AGREGA LA CLASE POR SI DESPUES TENGO QUE REPETIR LAS CARACTERISTICAS class="movies-flex"-->
+            <div id="polular-list" class="movies-flex">
+                <!-- CAMBIO CLASE 09 - NUEVO -->
+                <div class="movie-item" id="movie1">
+                    <a href="detail-movies.html">
+                        <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Mario Bros</p>
+                            <p class="movie-item-detail-subtitle">2023 - 6.9 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-item" id="movie2">
+                    <a href="detail-movies.html">
+                        <img src="https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">The Flash</p>
+                            <p class="movie-item-detail-subtitle">2023 - 6.9 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-item" id="movie3">
+                    <a href="detail-movies.html">
+                        <img src="https://image.tmdb.org/t/p/w500/ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">The Little Mermaid</p>
+                            <p class="movie-item-detail-subtitle">2023 - 6.4 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="movie-item" id="movie4">
+                    <a href="detail-movies.html">
+                        <img src="https://image.tmdb.org/t/p/w500/kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Ruby Gillman, Teenage Kraken</p>
+                            <p class="movie-item-detail-subtitle">2023 - 7.8 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="movie-item" id="movie5">
+                    <a href="detail-movies.html">
+                        <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Guardians of the Galaxy Vol. 3</p>
+                            <p class="movie-item-detail-subtitle">2023 - 8.1 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-item" id="movie6">
+                    <a href="detail-movies.html">
+                        <img src="https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Fast X</p>
+                            <p class="movie-item-detail-subtitle">2023 - 7.3 ⭐</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="top-rated" class="muestra">
+            <h2>Las mas aclamadas</h2>
+        </section>
+
+    </main>
+    <footer>
+        <a href="">Terminos y condiciones</a>
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Ayuda</a>
+    </footer>
+</body>
+</html>
